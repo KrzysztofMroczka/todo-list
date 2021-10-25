@@ -16,14 +16,14 @@ public class TodoData {
     private final List<TodoItem> items = new ArrayList<>();
 
     // == constructors ==
+    // == Dummy data ==
     public TodoData () {
 
         addItem(new TodoItem("first","first details", LocalDate.now()));
         addItem(new TodoItem("second","second details", LocalDate.now()));
         addItem(new TodoItem("third","third details", LocalDate.now()));
+        addItem(new TodoItem("fourth","fourth details", LocalDate.now()));
     }
-
-    // == Dummy data ==
 
     // == public methods ==
     public List <TodoItem> getItems() {
