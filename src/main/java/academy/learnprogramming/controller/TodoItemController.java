@@ -36,7 +36,7 @@ public class TodoItemController {
         return todoItemService.getData();
     }
 
-    //http://localhost:8080/todo-list/items
+    //localhost:8080/todo-list/items
     @GetMapping(Mappings.ITEMS)
     public String items() {
         return ViewNames.ITEMS_LIST;
