@@ -15,8 +15,7 @@ public class WebAppInitializer implements WebApplicationInitializer {
     public void onStartup(ServletContext servletContext) {
     log.info("onStartup");
 
-    //create soring application context
-
+        //create spring application context
         AnnotationConfigWebApplicationContext context = new AnnotationConfigWebApplicationContext();
         context.register(WebConfig.class);
 
@@ -28,7 +27,5 @@ public class WebAppInitializer implements WebApplicationInitializer {
 
         registration.setLoadOnStartup(1);
         registration.addMapping("/");
-
-
     }
 }
